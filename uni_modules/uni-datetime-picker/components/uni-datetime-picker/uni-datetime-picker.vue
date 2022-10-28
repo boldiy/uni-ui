@@ -622,7 +622,7 @@
 
 				} else {
 					if (this.hasTime) {
-						this.singleVal = e.fulldate + ' ' + e.time
+						this.singleVal = e.fulldate + ' ' + (e.time.trim() || '00:00:00')
 					} else {
 						this.singleVal = e.fulldate
 					}
